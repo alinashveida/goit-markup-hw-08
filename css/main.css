@@ -538,19 +538,15 @@ a {
   background-color: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.footer > .container {
-  display: flex;
-  align-items: baseline;
+  text-align: center;
 }
 
 .footer-adress-container {
-  margin-right: 84px;
+  margin-bottom: 60px;
 }
 
 .footer-social-links {
-  margin-right: 93px;
+  margin-bottom: 60px;
 }
 
 .address {
@@ -561,12 +557,12 @@ a {
   letter-spacing: 0.03em;
   color: #FFFFFF;
   display: block;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .footer-contact-email {
   display: block;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .footer-contact-phone,
@@ -583,8 +579,8 @@ a {
 .logo-footer {
   font-family: var(--secondary-font);
   font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #FFFFFF;
   text-decoration: none;
@@ -611,6 +607,42 @@ a {
 
 .footer .social-link:hover, .footer .social-link:focus {
   background-color: #2196F3;
+}
+
+@media screen and (min-width: 768px) {
+  .footer > .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-adress-container {
+    margin-right: 174px;
+    margin-left: 76px;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer > .container {
+    display: flex;
+    align-items: baseline;
+  }
+  .footer {
+    text-align: left;
+  }
+  .footer-adress-container {
+    margin-right: 84px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .footer-social-links {
+    margin-right: 93px;
+  }
+  .address, .footer-contact-email {
+    margin-bottom: 9px;
+  }
+  .footer-social-links {
+    margin-bottom: 0;
+  }
 }
 
 .main-footer {
@@ -930,9 +962,9 @@ a {
   padding: 15px 16px;
   background-color: #2F303A;
   color: #FFFFFF;
-  width: 358px;
+  width: 450px;
   height: 50px;
-  margin-right: 12px;
+  margin-bottom: 20px;
 }
 
 .button-subscribe {
@@ -956,8 +988,29 @@ a {
   margin-left: -5px;
 }
 
-.subscribe {
-  margin-right: 10px;
+@media screen and (min-width: 768px) {
+  .footer-form-input {
+    display: block;
+  }
+  .footer-form-group {
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form-input {
+    display: inline;
+  }
+  .footer-form-input {
+    width: 358px;
+    margin-right: 12px;
+  }
+  .slogan-form {
+    text-align: left;
+  }
+  .footer-form-group {
+    margin: 0;
+  }
 }
 
 .logo-accent {
