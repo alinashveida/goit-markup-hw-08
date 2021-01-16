@@ -1,0 +1,72 @@
+/* =====СОТРУДНИКИ===== */
+.section-workers{
+    background-color: #F5F4FA;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
+.section-workers-list{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+.section-workers-title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+  
+    margin-bottom: 10px;
+  }
+  
+.section-workers-text{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+    margin-bottom: 16px;
+    
+  }
+  
+.social-list-links{
+    display: flex;
+    justify-content: center;
+  }
+  
+.social-item:not(:last-child){
+    margin-right: 10px;
+  }
+  
+.social-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    color: #afb1b8;
+    border-radius: 50%;
+  
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+    color:#FFFFFF;
+    background-color: #2196F3;
+  }
+  }
+  
+.social-icon{
+    fill: currentColor;
+  }
+  
+.worker-card{
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #FFFFFF;
+  
+  }

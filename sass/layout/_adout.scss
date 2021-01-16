@@ -1,0 +1,36 @@
+/*======= Чем мы занимаемся =======*/
+.section-adout{
+    padding-bottom: 94px;
+  }
+  
+  .section-adout-list{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Текст на картинке */
+  .section-adout-text{
+    font-family:var(--main-font);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+  
+  .section-about-container{
+    background: rgba(47, 48, 58, 0.8);
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  
+    position: absolute;
+  }
+  
+  .section-about-item{
+    position: relative;
+  }

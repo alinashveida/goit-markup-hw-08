@@ -1,0 +1,41 @@
+/*=== ПРЕИМУЩЕСТВА ===*/
+.section-advantages{
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .section-advantages-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .section-advantages-item{
+    width: 270px;
+  }
+  
+  .section-advantages-title{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  
+    margin-bottom: 10px;
+  }
+  
+  .section-advantages-text{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);  
+  }
+  
+  .advantages-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+    height: 120px;
+  }
