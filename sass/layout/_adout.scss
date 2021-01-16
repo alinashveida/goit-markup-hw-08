@@ -1,8 +1,14 @@
 /*======= Чем мы занимаемся =======*/
 .section-adout{
+  display: none;
+}
+
+@media screen and (min-width: 1200px){
+.section-adout{
+    display: block;
     padding-bottom: 94px;
   }
-  
+
   .section-adout-list{
     display: flex;
     justify-content: space-between;
@@ -34,3 +40,5 @@
   .section-about-item{
     position: relative;
   }
+    
+}

@@ -102,18 +102,29 @@
         </section>
 
         <!--секция Чем мы занимаемся-->
-        <!-- <section class="section-adout">
+         <section class="section-adout"> 
             <div class="container">
             <h2 class="subtitle">Чем мы занимаемся</h2>
             <ul class="section-adout-list">
                 <li class="section-about-item">
-                    <img class="section-adout-img" src="./imagens/main/img.jpg" alt="печатает на клавиатуре" width="370" height="294">
+                    <picture >
+                        <!-- <source 
+                        srcset="./imagens/main/img.jpg 1x, ./imagens/main/img.1-2х.jpg 2x">
+                        media="(min-width: 1200px)" > -->
+                      <img class="section-adout-img" src="./imagens/main/img.jpg" alt=печатает на клавиатуре" width="370" height="294">
+                     </picture>
+                    <!-- <img class="section-adout-img" src="./imagens/main/img.jpg" alt="печатает на клавиатуре" width="370" height="294"> -->
                     <div class="section-about-container">
                         <p class="section-adout-text">Десктопные приложения</p>
                     </div>
                 </li>
                 <li class="section-about-item">
-                    <img class="section-adout-img" src="./imagens/main/img2.jpg" alt="смартфон в руке" width="370" height="294" >
+                    <picture >
+                        <!-- <source 
+                        srcset="./imagens/main/img2.jpg 1x, ./imagens/main/img.2-2х.jpg 2x" />  -->
+                        <img class="section-adout-img" src="./imagens/main/img2.jpg" alt="смартфон в руке" width="370" height="294" >
+                    </picture>
+                    
                     <div class="section-about-container">
                         <p class="section-adout-text">Мобильные приложения</p>
                     </div>
@@ -126,14 +137,26 @@
                 </li>
             </ul>
             </div>
-        </section> -->
+        </section> 
         <!--Сотрудники-->
-        <!-- <section class="section-workers">
+         <section class="section-workers">
             <div class="container">
                 <h2 class="subtitle">Наша команда</h2>
            <ul class="section-workers-list">
                <li class="section-workers-item">
-                   <img class="section-workers-img" src="./imagens/workers/ihor.jpg" alt="Игорь Демьяненко" width="270" height="260">
+                   <picture class="section-workers-picture">
+                      <source 
+                      srcset="./imagens/workers/img1-1х.jpg 1x, ./imagens/workers/img1-2х.jpg 2x"
+                      media="(min-width: 320px)" />
+                      <source 
+                      srcset="./imagens/workers/img1-tablet-1х.jpg 1x, ./imagens/workers/img1-tablet-2х.jpg 2x"
+                      media="(min-width: 768px)" />
+                      <source 
+                      srcset="./imagens/workers/img1-desk-1х.jpg 1x, ./imagens/workers/img1-desk-2х.jpg 2x"
+                      media="(min-width: 1200px)" />
+                    <img class="section-workers-img" src="./imagens/workers/img1-1х.jpg" alt="Игорь Демьяненко" >
+                   </picture>
+                   
                    <div class="worker-card">
                    <h3 class="section-workers-title">Игорь Демьяненко</h3>
                    <p class="section-workers-text" lang="en">Product Designer</p>
@@ -170,7 +193,19 @@
                   </div>
                </li>
                <li class="section-workers-item">
-                   <img class="section-workers-img" src="./imagens/workers/olha.jpg" alt="Ольга Репина" width="270" height="260">
+                <picture class="section-workers-picture">
+                    <source 
+                    srcset="./imagens/workers/img2-2х.jpg 1x, ./imagens/workers/img2-2х.jpg 2x"
+                    media="(min-width: 320px)">
+                    <source 
+                    srcset="./imagens/workers/img2-tablet-1х.jpg 1x, ./imagens/workers/img2-tablet-2х.jpg 2x"
+                    media="(min-width: 768px)">
+                    <source 
+                    srcset="./imagens/workers/img2-desk-1х.jpg 1x, ./imagens/workers/img2-desk-2х.jpg 2x"
+                    media="(min-width: 1200px)">
+                  <img class="section-workers-img" src="./imagens/workers/img2-1х.jpg" alt="Ольга Репина" >
+                 </picture>
+                   
                    <div class="worker-card">
                    <h3 class="section-workers-title">Ольга Репина</h3>
                    <p class="section-workers-text" lang="en">Frontend Develope</p>
@@ -207,7 +242,19 @@
                    </div>
                </li>
                <li class="section-workers-item">
-                   <img class="section-workers-img" src="./imagens/workers/kolya.jpg" alt="Николай Тарасов" width="270" height="260">
+                <picture class="section-workers-picture">
+                <source 
+                srcset="./imagens/workers/img3-2х.jpg 1x, ./imagens/workers/img3-2х.jpg 2x"
+                media="(min-width: 320px)">
+                <source 
+                srcset="./imagens/workers/img3-tablet-1х.jpg 1x, ./imagens/workers/img3-tablet-2х.jpg 2x"
+                media="(min-width: 768px)">
+                <source 
+                srcset="./imagens/workers/img3-desk-1х.jpg 1x, ./imagens/workers/img3-desk-2х.jpg 2x"
+                media="(min-width: 1200px)">
+              <img class="section-workers-img" src="./imagens/workers/img3-1х.jpg" alt="Николай Тарасов" >
+             </picture>
+                   
                    <div class="worker-card">
                    <h3 class="section-workers-title">Николай Тарасов</h3>
                    <p class="section-workers-text" lang="en">Marketing</p>
@@ -244,7 +291,19 @@
                    </div>
                </li>
                <li class="section-workers-item">
-                   <img class="section-workers-img" src="./imagens/workers/misha.jpg" alt="Михаил Ермаков" width="270" height="260">
+                <picture class="section-workers-picture">
+                    <source 
+                    srcset="./imagens/workers/img4-2х.jpg 1x, ./imagens/workers/img4-2х.jpg 2x"
+                    media="(min-width: 320px)">
+                    <source 
+                    srcset="./imagens/workers/img4-tablet-1х.jpg 1x, ./imagens/workers/img4-tablet-2х.jpg 2x"
+                    media="(min-width: 768px)">
+                    <source 
+                    srcset="./imagens/workers/img4-desk-1х.jpg 1x, ./imagens/workers/img4-desk-2х.jpg 2x"
+                    media="(min-width: 1200px)">
+                  <img class="section-workers-img" src="./imagens/workers/img4-1х.jpg" alt="Михаил Ермаков" >
+                 </picture>
+                   
                    <div class="worker-card">
                    <h3 class="section-workers-title">Михаил Ермаков</h3>
                    <p class="section-workers-text" lang="en">UI Designer</p>
@@ -283,10 +342,10 @@
            </ul>
             </div>
            
-        </section> -->
+        </section>  
 
 <!-- Постоянные клиенты -->
-        <!-- <section class="clients">
+        <section class="clients">
             <div class="container">
               <h2 class="subtitle">Постоянные клиенты</h2>
                <ul class="clients-list">
@@ -334,7 +393,7 @@
                    </li>
                </ul>
             </div>
-        </section> -->
+        </section>
 
     </main>
 
