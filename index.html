@@ -12,39 +12,59 @@
 </head>
 <body>
     <!--header-->
-    <!-- <header class="header">
-        <div class="container"> -->
+    <header class="header">
+        <div class="container"> 
         <!--Навигация-->
-        <!-- <nav class="navigation">
+        <nav class="navigation">
         <a class="logo" href="#"><span class="logo-accent">Web</span>Studio</a>
-        <ul class="navigation-menu">
-            <li class="navigation-menu-item">
-                <a class="navigation-menu-link is-current" href="#">Студия</a>
-            </li>
-            <li class="navigation-menu-item">
-                <a class="navigation-menu-link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="navigation-menu-item">
-                <a class="navigation-menu-link" href="#">Контакты</a>
-            </li>
-        </ul>
-        </nav> -->
-        <!--Адресс-->
-        <!-- <address class="contact">
-            <a  class="contact-email" href="mailto:info@devstudio.com">
-                <svg class="contact-icon" width="16px" height="12px">
-                    <use href="imagens/sprite.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com 
-            </a>
-            <a class="contact-phone" href="tell:+380961111111">
-                <svg class="contact-icon" width="10px" height="16px">
-                    <use href="imagens/sprite.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11
-            </a>
-        </address>
-        </div> -->
+        <button 
+           class="header-button" 
+           type="button" 
+           aria-expanded="false"
+           aria-controls="menu-container"
+           data-menu-button >
+            <svg 
+                height="40px" 
+                width="40px" 
+                aria-label="переключатель мобильного меню">
+            
+                <use class="icon-menu"  href="./imagens/sprite.svg#icon-burger"></use>
+                <use class="icon-close" href="./imagens/sprite.svg#icon-close-for-burger"></use>
+            </svg>
+        </button>
+        <div class="menu-container" id="menu-container" data-menu>
+            <ul class="navigation-menu">
+                <li class="navigation-menu-item">
+                    <a class="navigation-menu-link is-current" href="#">Студия</a>
+                </li>
+                <li class="navigation-menu-item">
+                    <a class="navigation-menu-link" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="navigation-menu-item">
+                    <a class="navigation-menu-link" href="#">Контакты</a>
+                </li>
+            </ul>
+            
+            <!--Адресс-->
+            <address class="contact">
+                <a  class="contact-email" href="mailto:info@devstudio.com">
+                    <svg class="contact-icon" width="16px" height="12px">
+                        <use href="imagens/sprite.svg#icon-envelope"></use>
+                    </svg>
+                    info@devstudio.com 
+                </a>
+                <a class="contact-phone" href="tell:+380961111111">
+                    <svg class="contact-icon" width="10px" height="16px">
+                        <use href="imagens/sprite.svg#icon-smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11
+                </a>
+            </address>
+        </div>
+
+    </nav>
+        
+        </div> 
      </header>
 
 
@@ -108,29 +128,30 @@
             <ul class="section-adout-list">
                 <li class="section-about-item">
                     <picture >
-                        <!-- <source 
-                        srcset="./imagens/main/img.jpg 1x, ./imagens/main/img.1-2х.jpg 2x">
-                        media="(min-width: 1200px)" > -->
-                      <img class="section-adout-img" src="./imagens/main/img.jpg" alt=печатает на клавиатуре" width="370" height="294">
+                            <source srcset="./imagens/main/img.jpg 1x, ./imagens/main/img.1-2x.jpg 2x" media="(min-width: 1200px)" />
+                            <img class="work-examples-img" src="./imagens/main/img.jpg" alt="печатает на клавиатуре" >
                      </picture>
-                    <!-- <img class="section-adout-img" src="./imagens/main/img.jpg" alt="печатает на клавиатуре" width="370" height="294"> -->
+                    
                     <div class="section-about-container">
                         <p class="section-adout-text">Десктопные приложения</p>
                     </div>
                 </li>
                 <li class="section-about-item">
                     <picture >
-                        <!-- <source 
-                        srcset="./imagens/main/img2.jpg 1x, ./imagens/main/img.2-2х.jpg 2x" />  -->
-                        <img class="section-adout-img" src="./imagens/main/img2.jpg" alt="смартфон в руке" width="370" height="294" >
-                    </picture>
+                        <source srcset="./imagens/main/img2.jpg 1x, ./imagens/main/img.2-2x.jpg 2x" media="(min-width: 1200px)" />
+                        <img class="section-adout-img" src="./imagens/main/img2.jpg" alt="смартфон в руке" >
+                 </picture>
                     
                     <div class="section-about-container">
                         <p class="section-adout-text">Мобильные приложения</p>
                     </div>
                 </li>
                 <li class="section-about-item">
-                    <img class="section-adout-img"  src="./imagens/main/img3.jpg" alt="работает на планшете" width="370" height="294">
+                    <picture >
+                        <source srcset="./imagens/main/img3.jpg 1x, ./imagens/main/img.3-2x.jpg 2x" media="(min-width: 1200px)" />
+                        <img class="section-adout-img"  src="./imagens/main/img3.jpg" alt="работает на планшете" >
+                 </picture>
+                   
                     <div class="section-about-container">
                         <p class="section-adout-text">Дизайнерские решения</p>
                     </div>
@@ -514,7 +535,8 @@
            </form>
         </div>
     </div> -->
-
+    
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
 
 </body>
