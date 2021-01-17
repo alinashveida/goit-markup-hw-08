@@ -645,19 +645,15 @@ a {
   }
 }
 
-.main-footer {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.main-portfolio {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .buttons-list {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 611px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .button-portfolio {
@@ -685,21 +681,34 @@ a {
   color: #FFFFFF;
 }
 
-.work-examples-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.button-item:not(:last-child) {
+  margin-right: 8px;
 }
 
-.work-examples-item:nth-child(-n+6) {
-  margin-bottom: 30px;
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .button-item:nth-child(-n+3) {
+    margin-bottom: 15px;
+  }
 }
 
-.card-content {
-  border: 1px solid #EEEEEE;
-  box-sizing: border-box;
-  width: 370px;
-  padding: 20px 24px;
+@media screen and (min-width: 768px) {
+  .buttons-list {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.main-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .work-examples-title {
@@ -719,6 +728,12 @@ a {
   color: var(--secondary-color);
 }
 
+.card-content {
+  border: 1px solid #EEEEEE;
+  box-sizing: border-box;
+  padding: 20px 24px;
+}
+
 .work-examples-link {
   display: block;
   border: 1px solid transparent;
@@ -728,6 +743,32 @@ a {
 .work-examples-link:hover, .work-examples-link:focus {
   border: 1px solid #EEEEEE;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+@media screen and (min-width: 300px) and (max-width: 1199px) {
+  .work-examples-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .work-examples-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .work-examples-title {
+    letter-spacing: 0.04em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .work-examples-item:nth-child(-n+6) {
+    margin-bottom: 30px;
+  }
 }
 
 .overlay {
