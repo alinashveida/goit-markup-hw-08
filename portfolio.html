@@ -12,11 +12,27 @@
 </head>
 <body>
      <!--header-->
-    <!-- <header class="header">
-        <div class="container"> -->
+    <header class="header">
+        <div class="container">
             <!--Навигация-->
-        <!-- <nav class="navigation">
+        <nav class="navigation">
             <a class="logo" href="#"><span class="logo-accent">Web</span>Studio</a>
+            <button 
+           class="header-button" 
+           type="button" 
+           aria-expanded="false"
+           aria-controls="menu-container"
+           data-menu-button >
+            <svg 
+                height="40px" 
+                width="40px" 
+                aria-label="переключатель мобильного меню">
+            
+                <use class="icon-menu"  href="./imagens/sprite.svg#icon-burger"></use>
+                <use class="icon-close" href="./imagens/sprite.svg#icon-close-for-burger"></use>
+            </svg>
+        </button>
+        <div class="menu-container" id="menu-container" data-menu>
             <ul class="navigation-menu">
                 <li class="navigation-menu-item">
                     <a class="navigation-menu-link" href="./index.html">Студия</a>
@@ -28,9 +44,9 @@
                     <a class="navigation-menu-link" href="#">Контакты</a>
                 </li>
             </ul>
-            </nav> -->
+            
            <!--Адресс-->
-        <!-- <address class="contact">
+        <address class="contact">
             <a  class="contact-email" href="mailto:info@devstudio.com">
                 <svg class="contact-icon" width="16px" height="12px">
                     <use href="imagens/sprite.svg#icon-envelope"></use>
@@ -44,8 +60,12 @@
                 +38 096 111 11 11
             </a>
         </address>
+        </div>
+
+    </nav>
+            
         
-     </header> -->
+     </header>
 
      <!--Main-->
     <main class="main-portfolio"> 
@@ -313,5 +333,7 @@
  </div>
   </footer>
 
+  <script src="./js/menu.js"></script>
+  
 </body>
 </html>
